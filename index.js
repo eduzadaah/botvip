@@ -1,6 +1,7 @@
-const handler = require("./src/handler/index");
+require("./src/models/db.js");
 
 const { Client, Intents, Collection, MessageEmbed } = require("discord.js");
+const handler = require("./src/handler/index");
 
 const client = new Client({
     partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
